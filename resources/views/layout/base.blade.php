@@ -18,7 +18,7 @@
         <!-- Sidebar  -->
         <nav id="sidebar">
             <div class="sidebar-header">
-                <h3>Gerenciador</h3>
+                <h3>Gerenciador 1.0</h3>
             </div>
 
             <ul class="list-unstyled components">
@@ -26,13 +26,16 @@
                     <a href="/">Página Inicial</a>
                 </li>
                 <li @if($current == "categorias") class = "active" @endif>
-                    <a href="#categoriasSubmenu"  data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Cadastrar</a>
+                    <a href="#categoriasSubmenu"  data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Produtos</a>
                     <ul class="collapse list-unstyled" id="categoriasSubmenu">
                         <li>
-                            <a href="/categoria/cadastro">Novo Produto</a>
+                            <a href="/categoria/cadastro">Cadastrar</a>
                         </li>
                         <li>
                             <a href="/categorias/">Listar</a>
+                        </li>
+                        <li>
+                            <a href="/categorias/">Atualizar o Estoque</a>
                         </li>
                         <li>
                             <a href="/categorias/restaurar">Restaurar</a>
@@ -43,10 +46,13 @@
                     <a href="#produtosSubmenu" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Vendas</a>
                     <ul class="collapse list-unstyled" id="produtosSubmenu">
                         <li>
-                            <a href="/produtos/novo">Nova Venda</a>
+                            <a href="/produtos/novo">Cadastrar</a>
                         </li>
                         <li>
                             <a href="/produtos/">Listar</a>
+                        </li>
+                        <li>
+                            <a href="/categorias/restaurar">Restaurar</a>
                         </li>
                     </ul>
                 </li>
@@ -57,7 +63,7 @@
                             <a href="/clientes/novo">Geral</a>
                         </li>
                         <li>
-                            <a href="/clientes">Filtar</a>
+                            <a href="/clientes">Filtrar Por Mês</a>
                         </li>
                     </ul>
                 </li>
