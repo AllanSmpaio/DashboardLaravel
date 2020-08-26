@@ -7,7 +7,7 @@
     <link href="{{asset('css/style.css')}}" rel = "stylesheet">
     <link href="{{asset('css/side-bar.css')}}" rel = "stylesheet">
     <meta name="csrf-token" content = "{{csrf_token()}}">
-    <title>Sistema de Vendas</title>
+    <title>Gerenciador 1.0</title>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
 
