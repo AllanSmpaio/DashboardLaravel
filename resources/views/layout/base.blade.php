@@ -25,11 +25,11 @@
                 <li @if($current == "principal") class = "active" @endif>
                     <a href="/">Página Inicial</a>
                 </li>
-                <li @if($current == "categorias") class = "active" @endif>
-                    <a href="#categoriasSubmenu"  data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Produtos</a>
-                    <ul class="collapse list-unstyled" id="categoriasSubmenu">
+                <li @if($current == "Produtos") class = "active" @endif>
+                    <a href="#produtosSubmenu"  data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Produtos</a>
+                    <ul class="collapse list-unstyled" id="produtosSubmenu">
                         <li>
-                            <a href="/categoria/cadastro">Cadastrar</a>
+                            <a href="{{route('produtos.create')}}">Cadastrar</a>
                         </li>
                         <li>
                             <a href="/categorias/">Listar</a>
@@ -42,9 +42,9 @@
                         </li>
                     </ul>
                 </li>
-                <li @if($current == "produtos") class = "active" @endif >
-                    <a href="#produtosSubmenu" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Vendas</a>
-                    <ul class="collapse list-unstyled" id="produtosSubmenu">
+                <li @if($current == "Vendas") class = "active" @endif >
+                    <a href="#vendasSubmenu" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Vendas</a>
+                    <ul class="collapse list-unstyled" id="vendasSubmenu">
                         <li>
                             <a href="/produtos/novo">Cadastrar</a>
                         </li>
@@ -56,9 +56,9 @@
                         </li>
                     </ul>
                 </li>
-                <li @if($current == "clientes") class = "active" @endif>
-                    <a href="#clientesSubmenu"  data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Relatórios</a>
-                    <ul class="collapse list-unstyled" id="clientesSubmenu">
+                <li @if($current == "Relatorios") class = "active" @endif>
+                    <a href="#relatoriosSubmenu"  data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Relatórios</a>
+                    <ul class="collapse list-unstyled" id="relatoriosSubmenu">
                         <li>
                             <a href="/clientes/novo">Geral</a>
                         </li>

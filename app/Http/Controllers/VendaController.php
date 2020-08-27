@@ -35,7 +35,9 @@ class VendaController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        /*date_default_timezone_set('America/Bahia');
+        $data_atual = date('Y-m-d H:i:s', time());
+        $produto->data_venda = $data_atual;*/
     }
 
     /**

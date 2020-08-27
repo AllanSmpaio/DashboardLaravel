@@ -24,7 +24,8 @@ class ProdutoController extends Controller
      */
     public function create()
     {
-        //
+        $produtos = Produto::all();
+        return view('cadastrar_produto', compact('produtos'));
     }
 
     /**
@@ -35,7 +36,16 @@ class ProdutoController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $produto = new Produto();
+        $produto->nome = $request->input("nome");
+        $produto->cor = $request->input("cor");
+        $produto->fabricante = $request->input("fabricante");
+        $produto->observacoes = $request->input("observacoes");
+        $produto->preco_compra = $request->input("preco_compra");
+        $produto->preco_venda = $request->input("preco_venda");
+        $produto->qtd_estoque = $request->input("qtd_estoque");
+        $produto->save();
+        return redirect()->route('produtos.create');
     }
 
     /**

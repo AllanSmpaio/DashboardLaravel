@@ -19,6 +19,7 @@ class CreateVendasTable extends Migration
             $table->string('cliente')->nullable();
             $table->unsignedBigInteger('produto_id');
             $table->integer('valor_vendido')->nullable();
+            $table->datetime('data_venda');
             $table->foreign('produto_id')->references('id')->on('produtos');
         });
     }
